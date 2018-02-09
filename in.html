@@ -1,0 +1,295 @@
+<html lang="en">
+
+<head>
+  
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+ <link rel="stylesheet" href="Croppie-2.5.0/croppie.css">
+<link rel="stylesheet" href="Croppie-2.5.0/croppie.min.js">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">  
+  </script>
+  <script type="text/javascript" src="angular-1.6.7/angular-1.6.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"> 
+  </script>
+
+</head>
+<style>
+
+@media (max-width: 990px) {
+  .resizeimg {
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .resizeimg {
+    width: auto;
+    height: 350px;
+  }
+}
+  .card {
+    text-align: center;
+  position: relative;
+  background-color: #f4f4f4;
+  margin: 10px auto;
+  height:250px;
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
+  
+}
+
+.card-image{
+  height:250px;
+  text-align: center;
+  position: relative;
+  background-color: #f4f4f4;
+  margin: 10px auto;
+  top:0;left:0;right:0;bottom:0;
+  padding-bottom: 20;
+  padding: 40;
+  
+  
+  box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
+}
+
+
+
+</style>
+
+
+<body  ng-app="myApp" ng-view="">
+  <div class="container responsive">
+    <nav>
+      <div class="nav-wrapper  #6d4c41 brown darken-1 ">
+          <div class="nav-wrapper  ">
+          <div class="nav-wrapper ">
+        <a href="#" class="brand-logo">welcome<i class="material-icons left">widgets</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="index.html" >home<i class="material-icons right">home</i></a>
+          </li>
+          <li>
+            <a href="data.html">post<i class="material-icons right">language</i></a>
+          </li>
+          <li>
+            <a href="#">Notification<i class="material-icons right">message</i></a>
+          </li>
+          <li>
+            <a href="#">people<i class="material-icons right">people</i></a>
+          </li>
+          <li>
+            <a class="btn dropdown-button #757575 grey darken-1" href="#" data-activates="dropdown">Mail Box
+              <i class="mdi-navigation-arrow-drop-down right"></i>
+            </a>
+            <ul id="dropdown" class="dropdown-content collection ">
+              <li>
+                <a href="#">Inbox
+                  <span class="badge">12</span>
+                </a>
+              </li>
+              <li>
+                <a href="#!">Unread
+                  <span class="new badge">4</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">Sent</a>
+              </li>
+              <li class="divider"></li>
+              <li>
+                <a href="#">Outbox
+                  <span class="badge">14</span>
+                </a>
+              </li>
+              </ul>
+            </ul>          
+    </nav>
+    </div>
+    
+
+
+    <div class="container">
+
+      <div class="row">
+        <div class="col s4">
+          <div class="row valign-wrapper">
+            <div class="card-panel small green z-depth-3 center-align"style:"height:80%; width:30%;">
+
+              <div class="col s12  offset-s4 valign">
+
+                <div class="card"style:"height:80%; width:30%;">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="image.jpg" >
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s4">
+          <div class="row valign-wrapper">
+            <div class="card-panel small green z-depth-3 center-align">
+
+              <div class="col s12  offset-s4 valign">
+
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light" style:"height:80%; width:100%;">
+                    <img class="activator responsive-img" src="download.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s4">
+            <div class="row valign-wrapper">
+              <div class="card-panel small green z-depth-3 center-align">
+  
+                <div class="col s12  offset-s4 valign">
+  
+                  <div class="card">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator responsive-img" src="images.jpg" >
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Card Title
+                        <i class="material-icons right">more_vert</i>
+                      </span>
+                      
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title
+                        <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        <div class="row">
+          <div class="col s4">
+            <div class="row valign-wrapper">
+              <div class="card-panel small green z-depth-3 center-align"style:"height:80%; width:30%;">
+  
+                <div class="col s12  offset-s4 valign">
+  
+                  <div class="card"style:"height:80%; width:30%;">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator responsive-img" src="car.jpg" >
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">car
+                        <i class="material-icons right">more_vert</i>
+                      </span>                      
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Card Title
+                        <i class="material-icons right">close</i>
+                      </span>
+                      <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+
+        <div class="col s4 ">
+          <div class="row valign-wrapper">
+            <div class="card-panel small green z-depth-3 center-align">
+
+              <div class="col s12  offset-s4 valign">
+
+                <div class="card">
+                  <div class="card-image waves-effect waves-block waves-light">
+                    <img class="activator responsive-img" src="down.jpg">
+                  </div>
+                  <div class="card-content">
+                    <span class="card-title activator grey-text text-darken-4">Card Title
+                      <i class="material-icons right">more_vert</i>
+                    </span>
+                    
+                  </div>
+                  <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Card Title
+                      <i class="material-icons right">close</i>
+                    </span>
+                    <p>Here is some more information about this product that is only revealed once clicked on.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+      <div class="fixed-action-btn">
+        <a href="#" class="btn-floating red btn-large">
+          <i class="large material-icons">mode_edit</i>
+        </a>
+        <ul>
+          <li>
+            <a href="#" class="btn-floating blue btn-large">
+              <i class="large material-icons">insert_chart</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-floating blue btn-large">
+              <i class="large material-icons">publish</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-floating blue btn-large">
+              <i class="large material-icons">format_quote</i>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="btn-floating blue btn-large">
+              <i class="large material-icons">attach_file</i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+
+</body>
+
+</html>
