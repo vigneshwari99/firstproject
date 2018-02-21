@@ -1,0 +1,106 @@
+
+<head>
+
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"> 
+  </script>
+  <script src="angular-1.6.7/angular-1.6.7/angular.js"></script>
+  <script src="angular-1.6.7/angular-1.6.7/angular-route.js"></script>
+  </head>
+  <body>
+    
+      <div class="container white z-depth-1">
+          <ul class="tabs teal" >
+            <li  class="tab col s3"><a  class="white-text active  #6d4c41 brown darken-1" href="#login">login</a></li>
+            <li class="tab col s3"><a class="white-text #6d4c41 brown darken-1" href="#register">register</a></li>
+          </ul>
+          <div id="login" class="col s12">
+            <div class="container">
+            <form class="col s12">
+              <div class="form-container">
+                <h3 class="teal-text"></h3>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input  id="userName" type="text" ng-model="name" >
+                    <label for="userName"></label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="pass" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                
+                <br>
+                <ul>
+                <center>
+                 <li> <button class="btn waves-effect waves-light #6d4c41 brown darken-1" type="submit" name="action">Connect</button></li>
+                  <br>
+                
+                 <li> <a href="">Forgotten password?</a></li>
+                 <li><a href="">sign up</a></li>
+                 <li>{{userName}}</li>
+                </center>
+                </ul>
+                
+
+              </div>
+            </form>
+            </div>
+          </div>
+          <div id="register" class="col s12">
+            <div class="container">
+            <form class="col s12">
+              <div class="form-container">
+                <h3 class="teal-text"></h3>
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input id="last_name1" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email1" type="email" class="validate">
+                    <label for="email">Email</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="email-confirm" type="email" class="validate">
+                    <label for="email-confirm">Email Confirmation</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="pass2" type="password" class="validate">
+                    <label for="password">Password</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="password-confirm" type="password" class="validate">
+                    <label for="password-confirm">Password Confirmation</label>
+                  </div>
+                </div>
+                <center>
+                  <button class="btn waves-effect waves-light #6d4c41 brown darken-1" type="submit" name="action">Submit</button>
+                </center>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+        </div>
+        </body>
+        </html>

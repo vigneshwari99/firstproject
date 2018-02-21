@@ -1,0 +1,100 @@
+<html lang="en" ng-app="appName">
+
+<head>
+
+  <meta name="viewport" content="width = device-width, initial-scale = 1">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js">  
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"> 
+  </script>
+  <script src="angular-1.6.7/angular-1.6.7/angular.js"></script>
+  <script src="angular-1.6.7/angular-1.6.7/angular-route.js"></script>
+ 
+  <script src="App/app.module.js"></script>
+  <script src="App/app.route.js"></script>
+  <script type="text/javascript" src="App\components\blog\blogController.js"></script>
+  <script type="text/javascript" src="App\components\login\LoginController.js"></script>
+  <script type="text/javascript" src="App\components\home\homeController.js"></script>
+  <script type="text/javascript" src="App\components\forum\forumController.js"></script>
+  <style>
+    @media (max-width: 990px) {
+      .resizeimg {
+        height: auto;
+      }
+    }
+
+    @media (min-width: 1000px) {
+      .resizeimg {
+        width: auto;
+        height: 350px;
+      }
+    }
+
+    .card {
+      text-align: center;
+      position: relative;
+      background-color: #f4f4f4;
+      margin: auto;
+      height: "250px";
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
+      height: auto;
+    }
+
+    .card-image {
+      height: 250px;
+      text-align: center;
+      position: relative;
+      background-color: #f4f4f4;
+      margin: 0px;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding-bottom: 20;
+      padding: 40;
+
+
+      box-shadow: 1px 1px 10px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: "200px";
+    }
+    .parallel{
+      margin-left: auto;
+      margin-right: auto;
+      width: "50%";
+      height: auto;
+    }
+    .cd{
+      padding: "10px";
+      height: "560px";
+    }
+  </style>
+</head>
+
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">Logo</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#!/">login</a></li>
+            <li><a href="#!/home">home</a></li>
+            <li><a href="#!/blog/">blog</a></li>
+            <li><a href="#!/forum/">forum</a></li>
+          </ul>
+        </div>
+      </nav>
+  
+  <div ng-view></div>
+</body>
+
+</html>
+
